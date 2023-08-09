@@ -8,10 +8,12 @@ public:
         int sign = 1;
         int i = 0;
 
+        //for checking spaces 
         while (i < n && isspace(s[i])) {
             i++;
         }
-        
+
+        //for chcking sign
         if (i < n && (s[i] == '-' || s[i] == '+')) {
             sign = (s[i] == '-') ? -1 : 1;
             i++;
@@ -35,7 +37,8 @@ public:
         } else if (ans < INT_MIN) {
             return INT_MIN;
         }
-        
+
+        //to convert long long to int 
         return static_cast<int>(ans);
     }
 };
