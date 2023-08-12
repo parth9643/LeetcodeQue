@@ -16,7 +16,7 @@ public:
 
         
             vector <string> h1=letterCombinations(digits.substr(0,1));
-            vector <string>                               h2=letterCombinations(digits.substr(1,digits.size()));
+            vector <string> h2=letterCombinations(digits.substr(1,digits.size()));
             
         
         
